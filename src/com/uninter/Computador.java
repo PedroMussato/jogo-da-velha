@@ -3,7 +3,7 @@ package com.uninter;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Computador {
+public class Computador extends Jogador {
 	private int type;
 	private Scanner teclado = new Scanner(System.in);
 
