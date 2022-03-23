@@ -4,9 +4,15 @@ import java.util.Scanner;
 
 public class Jogador {
 
+	private char player = 'X';
+
 	private Scanner teclado = new Scanner(System.in);
-	char marca = 'X';
 	
+	char marca = player;
+	
+	void Jogador () {
+		
+	}
 	private boolean validaJ (char celula) {
 		boolean retorno;
 		if (celula != '_') {
@@ -34,55 +40,55 @@ public class Jogador {
 			if (linha == 1 && coluna == 1) {
 				celula = tab.l1c1;
 				if (validaJ(celula)) {
-					tab.l1c1 = 'X';
+					tab.l1c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 1 && coluna ==2) {
 				celula = tab.l1c2;
 				if (validaJ(celula)) {
-					tab.l1c2 = 'X';
+					tab.l1c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 1 && coluna ==3) {
 				celula = tab.l1c3;
 				if (validaJ(celula)) {
-					tab.l1c3 = 'X';
+					tab.l1c3 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==1) {
 				celula = tab.l2c1;
 				if (validaJ(celula)) {
-					tab.l2c1 = 'X';
+					tab.l2c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==2) {
 				celula = tab.l2c2;
 				if (validaJ(celula)) {
-					tab.l2c2 = 'X';
+					tab.l2c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==3) {
 				celula = tab.l2c3;
 				if (validaJ(celula)) {
-					tab.l2c3 = 'X';
+					tab.l2c3 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==1) {
 				celula = tab.l3c1;
 				if (validaJ(celula)) {
-					tab.l3c1 = 'X';
+					tab.l3c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==2) {
 				celula = tab.l3c2;
 				if (validaJ(celula)) {
-					tab.l3c2 = 'X';
+					tab.l3c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==3) {
 				celula = tab.l3c3;
 				if (validaJ(celula)) {
-					tab.l3c3 = 'X';
+					tab.l3c3 = this.player;
 					jogada = false;
 				}
 			} else {

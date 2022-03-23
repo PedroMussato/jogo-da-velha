@@ -7,6 +7,7 @@ public class Computador extends Jogador {
 	private int type;
 	private Scanner teclado = new Scanner(System.in);
 
+	private char player = 'O';
 	Computador (int type) { // CONSTRUTOR
 		this.type = type;
 		}
@@ -45,55 +46,55 @@ public class Computador extends Jogador {
 			if (linha == 1 && coluna == 1) {
 				celula = tab.l1c1;
 				if (validaC(celula)) {
-					tab.l1c1 = 'O';
+					tab.l1c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 1 && coluna ==2) {
 				celula = tab.l1c2;
 				if (validaC(celula)) {
-					tab.l1c2 = 'O';
+					tab.l1c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 1 && coluna ==3) {
 				celula = tab.l1c3;
 				if (validaC(celula)) {
-					tab.l1c3 = 'O';
+					tab.l1c3 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==1) {
 				celula = tab.l2c1;
 				if (validaC(celula)) {
-					tab.l2c1 = 'O';
+					tab.l2c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==2) {
 				celula = tab.l2c2;
 				if (validaC(celula)) {
-					tab.l2c2 = 'O';
+					tab.l2c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 2 && coluna ==3) {
 				celula = tab.l2c3;
 				if (validaC(celula)) {
-					tab.l2c3 = 'O';
+					tab.l2c3 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==1) {
 				celula = tab.l3c1;
 				if (validaC(celula)) {
-					tab.l3c1 = 'O';
+					tab.l3c1 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==2) {
 				celula = tab.l3c2;
 				if (validaC(celula)) {
-					tab.l3c2 = 'O';
+					tab.l3c2 = this.player;
 					jogada = false;
 				}
 			} else if (linha == 3 && coluna ==3) {
 				celula = tab.l3c3;
 				if (validaC(celula)) {
-					tab.l3c3 = 'O';
+					tab.l3c3 = this.player;
 					jogada = false;
 				}
 			}
@@ -121,13 +122,13 @@ public class Computador extends Jogador {
 		// se cantos vazios for menor que 1 jogar em um dos cantos
 		if (cantos > 0) {
 			if (tab.l1c1 == '_') {
-				tab.l1c1 = 'O';
+				tab.l1c1 = this.player;
 			} else if (tab.l1c3 == '_') {
-				tab.l1c3 = 'O';
+				tab.l1c3 = this.player;
 			} else if (tab.l3c1 == '_') {
-				tab.l3c1 = 'O';
+				tab.l3c1 = this.player;
 			} else if (tab.l3c3 == '_') {
-				tab.l3c3 = 'O';
+				tab.l3c3 = this.player;
 			}
 		} else {
 			tab = tipo1(tab);
@@ -149,55 +150,55 @@ public class Computador extends Jogador {
             if (linha == 1 && coluna == 1) {
                 celula = tab.l1c1;
                 if (validaJ(celula)) {
-                    tab.l1c1 = 'O';
+                    tab.l1c1 = this.player;
                     jogada = false;
                 }
             } else if (linha == 1 && coluna ==2) {
                 celula = tab.l1c2;
                 if (validaJ(celula)) {
-                    tab.l1c2 = 'O';
+                    tab.l1c2 = this.player;
                     jogada = false;
                 }
             } else if (linha == 1 && coluna ==3) {
                 celula = tab.l1c3;
                 if (validaJ(celula)) {
-                    tab.l1c3 = 'O';
+                    tab.l1c3 = this.player;
                     jogada = false;
                 }
             } else if (linha == 2 && coluna ==1) {
                 celula = tab.l2c1;
                 if (validaJ(celula)) {
-                    tab.l2c1 = 'O';
+                    tab.l2c1 = this.player;
                     jogada = false;
                 }
             } else if (linha == 2 && coluna ==2) {
                 celula = tab.l2c2;
                 if (validaJ(celula)) {
-                    tab.l2c2 = 'O';
+                    tab.l2c2 = this.player;
                     jogada = false;
                 }
             } else if (linha == 2 && coluna ==3) {
                 celula = tab.l2c3;
                 if (validaJ(celula)) {
-                    tab.l2c3 = 'O';
+                    tab.l2c3 = this.player;
                     jogada = false;
                 }
             } else if (linha == 3 && coluna ==1) {
                 celula = tab.l3c1;
                 if (validaJ(celula)) {
-                    tab.l3c1 = 'O';
+                    tab.l3c1 = this.player;
                     jogada = false;
                 }
             } else if (linha == 3 && coluna ==2) {
                 celula = tab.l3c2;
                 if (validaJ(celula)) {
-                    tab.l3c2 = 'O';
+                    tab.l3c2 = this.player;
                     jogada = false;
                 }
             } else if (linha == 3 && coluna ==3) {
                 celula = tab.l3c3;
                 if (validaJ(celula)) {
-                    tab.l3c3 = 'O';
+                    tab.l3c3 = this.player;
                     jogada = false;
                 }
             } else {
